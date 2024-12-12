@@ -1,0 +1,71 @@
+
+/* Reservation Button */
+.reservation-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.reservation-button::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #eab946;
+    margin-left: 10px;
+}
+
+.reservation-button:hover {
+    background-color: #eab946;
+    color: black;
+}
+
+.reservation-button:hover::after {
+    background-color: black;
+}
+
+/* MENU Button */
+
+.menu-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #eab946;
+    color: #D4AF37;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-button::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #eab946;
+    margin-left: 10px;
+}
+
+.menu-button:hover {
+    background-color: #eab946;
+    color: black;
+}
+
+.menu-button:hover::after {
+    background-color: #000;
+}
