@@ -42,14 +42,15 @@
     padding: 10px 20px;
     text-decoration: none;
     border: 2px solid #eab946;
-    color: #D4AF37;
-    background-color: transparent;
+    color: #000;
+    background-color: #eab946;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     position: relative;
+    margin-top: 28px;
 }
 
 .menu-button::after {
@@ -57,40 +58,66 @@
     display: block;
     width: 40px;
     height: 2px;
-    background-color: #eab946;
+    background-color: #000;
     margin-left: 10px;
 }
 
 .menu-button:hover {
-    background-color: #eab946;
-    color: black;
+    background-color: transparent;
+    color: #eab946;
+    border: 2px solid #eab946;
 }
 
 .menu-button:hover::after {
-    background-color: #000;
+    background-color: #eab946;
 }
 
 /* Landing Page Background */
 
 #landing-page {
-    background-image: url(./Images/pexels-jonathanborba-28059309.jpg);
+    background-image: url(./Images/pexels-bertellifotografia-17294762.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 400px;
+}
+
+/* Logo Image */
+
+.res-logo {
+    width: 175px; 
+    height: 175px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
 /* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 28px;
+    margin-bottom: 30px;
+}
 
 .navbar {
     display: flex;
     justify-items: center;
     align-items: center;
     height: 80px;
+    min-width: 10rem;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+    width: 30rem;
+    margin-left: 20rem;
 }
 
 .nav-links li {
@@ -108,9 +135,28 @@
     color:#eab946
 }
 
-/* Image */
+/* MAIN SECTION */
 
-.res-logo {
-    width: 175px; 
-    height: 175px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h3, p {
+    color: white;
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+h1 {
+    color: #F3D382;
 }
