@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 
 /* Reservation Button */
 .reservation-button {
@@ -72,9 +76,9 @@
     background-color: #eab946;
 }
 
-/* Landing Page Background */
+/* Hero Background */
 
-#landing-page {
+#hero {
     background-image: url(./Images/pexels-bertellifotografia-17294762.jpg);
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
@@ -159,4 +163,32 @@ h3 {
 
 h1 {
     color: #F3D382;
+}
+
+/* SPECIAL MENU */
+
+.special-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    height: 40vh;
+}
+
+.special-menu h2 {
+    color: #F3D382;
+}
+
+.special-menu p {
+    text-align: center;
+}
+
+.special-item1 {
+    width: 400px;
+    height: 400px;
+}
+
+.special-item1 p {
+    text-align: center;
 }
