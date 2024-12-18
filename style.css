@@ -168,15 +168,12 @@ h1 {
 /* SPECIAL MENU */
 
 .special-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: #1E1E1E;
-    height: 40vh;
+    height: 600px;
 }
 
 .special-menu h2 {
+    text-align: center;
     color: #F3D382;
 }
 
@@ -184,11 +181,74 @@ h1 {
     text-align: center;
 }
 
+.special-menu h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.special-items {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
 .special-item1 {
-    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    width: 280px;
+    height: 400px;
+    margin-right: 10px;
+    background-color: #2E2E2E;
+    border: 1px solid #1E1E1E;
+}
+
+.special-item1 img {
+    width: 280px;
     height: 400px;
 }
 
-.special-item1 p {
-    text-align: center;
+.special-item1 p, .special-item1 h2 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* ORDER NOW Button */
+
+.order-now-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #eab946;
+    color: #000;
+    background-color: #eab946;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin-top: 28px;
+}
+
+.order-now-button::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    margin-left: 10px;
+}
+
+.order-now-button:hover {
+    background-color: transparent;
+    color: #eab946;
+    border: 2px solid #eab946;
+}
+
+.order-now-button:hover::after {
+    background-color: #eab946;
 }
