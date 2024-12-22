@@ -289,8 +289,29 @@ h1 {
 .speciality-tab input:hover {
     background-color: #eab946;
     color: #000;
-    border: 1px solid #D4AF37;
-    box-shadow: 1px 1px 2px 1px #eab946;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0px 0px #000;
     transition: 0.3s ease;
     font-weight: bold;
+}
+
+.specialities-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.specialities-section div img {
+    width: 500px;
+    height: 300px;
+}
+
+.specialities-section .ingredients {
+    width: 500px;
+    padding-left: 20px;
+}
+
+.ingredients h2, .ingredients p {
+    text-align: left;
 }
