@@ -85,7 +85,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 650px;
 }
 
 /* Logo Image */
@@ -100,19 +100,16 @@ body {
 /* Header Section */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 28px;
     margin-bottom: 30px;
+    width: 90vw;
 }
 
 .navbar {
     display: flex;
-    justify-items: center;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
-    min-width: 10rem;
+    width: 95vw;
 }
 
 .nav-links {
@@ -121,7 +118,6 @@ header {
     justify-content: space-around;
     padding: 0px;
     width: 30rem;
-    margin-left: 20rem;
 }
 
 .nav-links li {
@@ -147,6 +143,7 @@ main {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    height: 400px;
 }
 
 h3, p {
@@ -195,11 +192,10 @@ h1 {
 .special-item1 {
     display: flex;
     justify-content: flex-start;
-    align-items: left;
     flex-direction: column;
     width: 280px;
     height: 400px;
-    margin-right: 10px;
+    margin-right: 40px;
     background-color: #2E2E2E;
     border: 1px solid #1E1E1E;
 }
@@ -251,4 +247,50 @@ h1 {
 
 .order-now-button:hover::after {
     background-color: #eab946;
+}
+
+/* Restaurant Ambiance */
+
+.restaurant-ambiance {
+    padding: 50px 0px;
+    height: 300px;
+    background-color: #1E1E1E;
+    opacity: 1;
+}
+
+.restaurant-ambiance img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Specialities Tab */
+
+.speciality-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px 0px;
+}
+
+.speciality-tab input {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px 1px white;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.speciality-tab input:hover {
+    background-color: #eab946;
+    color: #000;
+    border: 1px solid #D4AF37;
+    box-shadow: 1px 1px 2px 1px #eab946;
+    transition: 0.3s ease;
+    font-weight: bold;
 }
