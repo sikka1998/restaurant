@@ -267,6 +267,26 @@ h1 {
 
 /* Specialities Tab */
 
+.our-specialities {
+    background-color: #1E1E1E;
+    height: 1250px;
+}
+
+.our-specialities h2 {
+    text-align: center;
+    color: #F3D382;
+    margin-bottom: 10px;
+}
+
+.our-specialities p {
+    text-align: center;
+}
+
+.our-specialities h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
 .speciality-tab {
     display: flex;
     justify-content: center;
@@ -295,23 +315,47 @@ h1 {
     font-weight: bold;
 }
 
+#speciality-tab-selected {
+    background-color: #eab946;
+    color: #000;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0px 0px #000;
+    font-weight: bold;
+}
+
+.our-specialities-menu {
+    padding-top: 20px;
+}
+
 .specialities-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+}
+
+.specialities-section-image {
+    height: 300px;
 }
 
 .specialities-section div img {
-    width: 500px;
+    width: 550px;
     height: 300px;
 }
 
 .specialities-section .ingredients {
-    width: 500px;
-    padding-left: 20px;
+    width: 400px;
+    padding-left: 40px;
 }
 
-.ingredients h2, .ingredients p {
+.ingredients h2, .ingredients p, .flipped-ingredients p,.flipped-ingredients h2 {
     text-align: left;
+}
+
+.flipped {
+    flex-direction: row-reverse;
+}
+
+.flipped-ingredients {
+    width: 400px;
+    padding-right: 40px;
 }
