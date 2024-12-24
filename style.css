@@ -269,7 +269,7 @@ h1 {
 
 .our-specialities {
     background-color: #1E1E1E;
-    height: 1250px;
+    height: 1200px;
 }
 
 .our-specialities h2 {
@@ -358,4 +358,26 @@ h1 {
 .flipped-ingredients {
     width: 400px;
     padding-right: 40px;
+}
+
+/* Dining Events */
+
+.dining-event {
+    background-color: #1E1E1E;
+    height: 1200px;
+}
+
+.dining-event h2 {
+    text-align: center;
+    color: #F3D382;
+    margin-bottom: 10px;
+}
+
+.dining-event p {
+    text-align: center;
+}
+
+.dining-event h3 {
+    padding-top: 20px;
+    text-align: center;
 }
