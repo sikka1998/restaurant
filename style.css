@@ -77,13 +77,13 @@ body {
 /* Hero Background */
 
 #hero {
-  background-image: url(./Images/pexels-bertellifotografia-17294762.jpg);
+  background: linear-gradient(to top, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.2)), url(./Images/pexels-bertellifotografia-17294762.jpg);
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 650px;
+  height: 800px;
 }
 
 /* Logo Image */
@@ -98,8 +98,9 @@ body {
 /* Header Section */
 
 header {
-  margin-bottom: 30px;
-  width: 90vw;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  width: 98.9vw;
 }
 
 .navbar {
@@ -141,7 +142,7 @@ main {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: 400px;
+  height: 600px;
 }
 
 h3,
