@@ -1,383 +1,453 @@
 body {
-    margin: 0px;
+  margin: 0px;
+  font-family: 'Playfair Display', serif;;
 }
-
 
 /* Reservation Button */
 .reservation-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: 2px solid #D4AF37;
-    color: #D4AF37;
-    text-transform: uppercase;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: transparent;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
 }
 
 .reservation-button::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #eab946;
-    margin-left: 10px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #eab946;
+  margin-left: 10px;
 }
 
 .reservation-button:hover {
-    background-color: #eab946;
-    color: black;
+  background-color: #eab946;
+  color: black;
 }
 
 .reservation-button:hover::after {
-    background-color: black;
+  background-color: black;
 }
 
 /* MENU Button */
 
 .menu-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: 2px solid #eab946;
-    color: #000;
-    background-color: #eab946;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #eab946;
+  color: #000;
+  background-color: #eab946;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  margin-top: 28px;
 }
 
 .menu-button::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #000;
-    margin-left: 10px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  margin-left: 10px;
 }
 
 .menu-button:hover {
-    background-color: transparent;
-    color: #eab946;
-    border: 2px solid #eab946;
+  background-color: transparent;
+  color: #eab946;
+  border: 2px solid #eab946;
 }
 
 .menu-button:hover::after {
-    background-color: #eab946;
+  background-color: #eab946;
 }
 
 /* Hero Background */
 
 #hero {
-    background-image: url(./Images/pexels-bertellifotografia-17294762.jpg);
-    background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: darken;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 650px;
+  background-image: url(./Images/pexels-bertellifotografia-17294762.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 650px;
 }
 
 /* Logo Image */
 
 .res-logo {
-    width: 175px; 
-    height: 175px;
-    margin-left: 10px;
-    margin-top: 20px;
+  width: 175px;
+  height: 175px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 /* Header Section */
 
 header {
-    margin-bottom: 30px;
-    width: 90vw;
+  margin-bottom: 30px;
+  width: 90vw;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 95vw;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding: 0px;
-    width: 30rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0px;
+  width: 30rem;
 }
 
 .nav-links li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: snow;
-    font-size: 18px;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: snow;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color:#eab946
+  color: #eab946;
 }
 
 /* MAIN SECTION */
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
 }
 
-h3, p {
-    color: white;
-    margin: 0px;
+h3,
+p {
+  color: white;
+  margin: 0px;
 }
 
 h3 {
-    font-family: "Meow Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
 }
 
 h1 {
-    color: #F3D382;
+  color: #f3d382;
 }
 
 /* SPECIAL MENU */
 
 .special-menu {
-    background-color: #1E1E1E;
-    height: 600px;
+  background-color: #1e1e1e;
+  height: 600px;
 }
 
 .special-menu h2 {
-    text-align: center;
-    color: #F3D382;
+  text-align: center;
+  color: #f3d382;
 }
 
 .special-menu p {
-    text-align: center;
+  text-align: center;
 }
 
 .special-menu h3 {
-    padding-top: 20px;
-    text-align: center;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .special-items {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .special-item1 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 280px;
-    height: 400px;
-    margin-right: 40px;
-    background-color: #2E2E2E;
-    border: 1px solid #1E1E1E;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 280px;
+  height: 400px;
+  margin-right: 40px;
+  background-color: #2e2e2e;
+  border: 1px solid #1e1e1e;
 }
 
 .special-item1 img {
-    width: 280px;
-    height: 400px;
+  width: 280px;
+  height: 400px;
 }
 
-.special-item1 p, .special-item1 h2 {
-    text-align: left;
-    padding-left: 10px;
+.special-item1 p,
+.special-item1 h2 {
+  text-align: left;
+  padding-left: 10px;
 }
 
 /* ORDER NOW Button */
 
 .order-now-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: 2px solid #eab946;
-    color: #000;
-    background-color: #eab946;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    margin-top: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #eab946;
+  color: #000;
+  background-color: #eab946;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  margin-top: 28px;
 }
 
 .order-now-button::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #000;
-    margin-left: 10px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  margin-left: 10px;
 }
 
 .order-now-button:hover {
-    background-color: transparent;
-    color: #eab946;
-    border: 2px solid #eab946;
+  background-color: transparent;
+  color: #eab946;
+  border: 2px solid #eab946;
 }
 
 .order-now-button:hover::after {
-    background-color: #eab946;
+  background-color: #eab946;
 }
 
 /* Restaurant Ambiance */
 
 .restaurant-ambiance {
-    padding: 50px 0px;
-    height: 300px;
-    background-color: #1E1E1E;
-    opacity: 1;
+  padding: 50px 0px;
+  height: 300px;
+  background-color: #1e1e1e;
+  opacity: 1;
 }
 
 .restaurant-ambiance img {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    object-fit: cover;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 /* Specialities Tab */
 
 .our-specialities {
-    background-color: #1E1E1E;
-    height: 1200px;
+  background-color: #1e1e1e;
+  height: 1200px;
 }
 
 .our-specialities h2 {
-    text-align: center;
-    color: #F3D382;
-    margin-bottom: 10px;
+  text-align: center;
+  color: #f3d382;
+  margin-bottom: 10px;
 }
 
 .our-specialities p {
-    text-align: center;
+  text-align: center;
 }
 
 .our-specialities h3 {
-    padding-top: 20px;
-    text-align: center;
+  padding-top: 20px;
+  text-align: center;
 }
 
-.speciality-tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    padding: 10px 0px;
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0px;
 }
 
-.speciality-tab input {
-    width: 120px;
-    height: 40px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    box-shadow: 1px 1px 2px 1px white;
-    margin-right: 18px;
-    cursor: pointer;
+.tab input {
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px 1px white;
+  margin-right: 18px;
+  cursor: pointer;
 }
 
-.speciality-tab input:hover {
-    background-color: #eab946;
-    color: #000;
-    border: 1px solid black;
-    box-shadow: 1px 1px 0px 0px #000;
-    transition: 0.3s ease;
-    font-weight: bold;
+.tab input:hover {
+  background-color: #eab946;
+  color: #000;
+  border: 1px solid black;
+  box-shadow: 1px 1px 0px 0px #000;
+  transition: 0.3s ease;
+  font-weight: bold;
 }
 
-#speciality-tab-selected {
-    background-color: #eab946;
-    color: #000;
-    border: 1px solid black;
-    box-shadow: 1px 1px 0px 0px #000;
-    font-weight: bold;
+#tab-selected {
+  background-color: #eab946;
+  color: #000;
+  border: 1px solid black;
+  box-shadow: 1px 1px 0px 0px #000;
+  font-weight: bold;
 }
 
 .our-specialities-menu {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .specialities-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .specialities-section-image {
-    height: 300px;
+  height: 300px;
 }
 
 .specialities-section div img {
-    width: 550px;
-    height: 300px;
+  width: 550px;
+  height: 300px;
 }
 
 .specialities-section .ingredients {
-    width: 400px;
-    padding-left: 40px;
+  width: 400px;
+  padding-left: 40px;
 }
 
-.ingredients h2, .ingredients p, .flipped-ingredients p,.flipped-ingredients h2 {
-    text-align: left;
+.ingredients h2,
+.ingredients p,
+.flipped-ingredients p,
+.flipped-ingredients h2 {
+  text-align: left;
 }
 
 .flipped {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .flipped-ingredients {
-    width: 400px;
-    padding-right: 40px;
+  width: 400px;
+  padding-right: 40px;
 }
 
 /* Dining Events */
 
 .dining-event {
-    background-color: #1E1E1E;
-    height: 1200px;
+  background-color: #1e1e1e;
+  height: 1200px;
 }
 
 .dining-event h2 {
-    text-align: center;
-    color: #F3D382;
-    margin-bottom: 10px;
+  text-align: center;
+  color: #f3d382;
+  margin-bottom: 10px;
 }
 
 .dining-event p {
-    text-align: center;
+  text-align: center;
 }
 
 .dining-event h3 {
-    padding-top: 20px;
-    text-align: center;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.dine {
+    display: grid;
+    padding: 0 75px;
+}
+
+.dining-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+}
+
+.dine-img-1 {
+    background: linear-gradient(to right, rgba(30, 30, 30, 1.0), rgba(30, 30, 30, 0.2)), url(./Images/pexels-jvdm-1543443.jpg);
+}
+
+.dine-img-2 {
+    background: linear-gradient(to left, rgba(30, 30, 30, 1.0), rgba(30, 30, 30, 0.2)), url(./Images/pexels-jonathanborba-28059309.jpg);
+}
+
+.dine-img-3 {
+    background: linear-gradient(to right, rgba(30, 30, 30, 1.0), rgba(30, 30, 30, 0.2)), url(./Images/pexels-bertellifotografia-16120258.jpg);
+}
+
+.dine-img {
+    width: 800px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+}
+
+.dine-spec {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 25rem;
+}
+
+/* POSITIONING OF DINE-SPEC */
+.pos {
+    right: 25rem;
+    text-align: right;
+}
+
+.dine-desc {
+    width: 200px;
+}
+
+.dine-spec .dine-desc h2 {
+    font-size: 1.3rem;
+}
+
+.dine-spec .dine-desc h2, .dine-spec .dine-desc p {
+    text-align: left;
+}
+
+.dine-spec .dine-price {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.dine-spec>.text-flip h2, .dine-spec>.text-flip p {
+    text-align: right;
 }
