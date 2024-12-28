@@ -4,11 +4,12 @@ body {
 }
 
 /* Reservation Button */
-.reservation-button, .about-us-button {
+.reservation-button, .about-us-button, .order-now-button {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
   border: 2px solid #d4af37;
+  box-shadow: 1px 1px 2px 1px #d4af37;
   color: #d4af37;
   text-transform: uppercase;
   font-size: 16px;
@@ -19,7 +20,7 @@ body {
   cursor: pointer;
 }
 
-.reservation-button::after, .about-us-button::after {
+.reservation-button::after, .about-us-button::after, .order-now-button::after {
   content: "";
   display: block;
   width: 40px;
@@ -28,23 +29,25 @@ body {
   margin-left: 10px;
 }
 
-.reservation-button:hover, .about-us-button:hover {
+.reservation-button:hover, .about-us-button:hover, .order-now-button:hover {
   background-color: #eab946;
   color: black;
+  box-shadow: 0px 0px 0px 0px;
 }
 
-.reservation-button:hover::after, .about-us-button:hover::after {
+.reservation-button:hover::after, .about-us-button:hover::after, .order-now-button:hover::after {
   background-color: black;
 }
 
 /* MENU Button */
 
-.menu-button {
+.menu-button, .reserve-table {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
   text-decoration: none;
-  border: 2px solid #eab946;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   color: #000;
   background-color: #eab946;
   text-transform: uppercase;
@@ -64,10 +67,11 @@ body {
   margin-left: 10px;
 }
 
-.menu-button:hover {
+.menu-button:hover, .reserve-table:hover {
   background-color: transparent;
   color: #eab946;
   border: 2px solid #eab946;
+  box-sizing: border-box;
 }
 
 .menu-button:hover::after {
@@ -187,6 +191,7 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  height: 80%;
 }
 
 .special-item1 {
@@ -194,7 +199,7 @@ h1 {
   justify-content: flex-start;
   flex-direction: column;
   width: 280px;
-  height: 400px;
+  height: 450px;
   margin-right: 40px;
   background-color: #2e2e2e;
   border: 1px solid #1e1e1e;
@@ -211,42 +216,10 @@ h1 {
   padding-left: 10px;
 }
 
-/* ORDER NOW Button */
-
-.order-now-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  border: 2px solid #eab946;
-  color: #000;
-  background-color: #eab946;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
-  margin-top: 28px;
-}
-
-.order-now-button::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background-color: #000;
-  margin-left: 10px;
-}
-
-.order-now-button:hover {
-  background-color: transparent;
-  color: #eab946;
-  border: 2px solid #eab946;
-}
-
-.order-now-button:hover::after {
-  background-color: #eab946;
+.order-now-button{
+  width: 60%;
+  height: 10%;
+  margin: 20px 10px;
 }
 
 /* Restaurant Ambiance */
@@ -501,4 +474,60 @@ h1 {
 
 .about-us>p {
   text-align: left;
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+  background-color: #1e1e1e;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(ellipse, rgba(30, 30, 30, 0.2) 20%, rgba(30, 30, 30, 0.2) 50%, rgba(30, 30, 30, 0.7) 80%), url(./Images/pexels-roman-odintsov-4870435.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.footer-section h1 {
+  color: #d4af37;
+  margin-top: 0px;
+  text-align:center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.address, .call {
+  margin-left: 20px;
+}
+
+.call>img, .address>img {
+  width: 15%;
+  height: 15%;
+}
+
+.call p, .address p {
+  display: inline-block;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  padding-bottom: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid #d4af37;
 }
